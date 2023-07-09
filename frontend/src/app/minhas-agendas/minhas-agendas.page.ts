@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./minhas-agendas.page.scss'],
 })
 export class MinhasAgendasPage implements OnInit {
+  nomePagina = ''
 
   constructor() { }
 
   ngOnInit() {
+    this.nomePagina = 'Minhas Agendas';
   }
 
 }

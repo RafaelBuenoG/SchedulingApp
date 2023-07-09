@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./conta.page.scss'],
 })
 export class ContaPage implements OnInit {
+  nomePagina = ''
 
   constructor() { }
 
   ngOnInit() {
+    this.nomePagina = 'Conta';
   }
 
 }

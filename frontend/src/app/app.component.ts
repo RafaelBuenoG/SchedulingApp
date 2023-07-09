@@ -10,8 +10,11 @@ export class AppComponent {
     { title: 'Estabelecimentos', url: '/estabelecimentos', icon: 'storefront' },
     { title: 'Agendar', url: '/agendar', icon: 'add' },
     { title: 'Minhas Agendas', url: '/minhas-agendas', icon: 'calendar' },
-    { title: 'Minha Conta', url: '/minhas-agendas', icon: 'person' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public configPages = [
+    { title: 'Conta', url: '/conta', icon: 'person' },
+    { title: 'Configurações', url: '/config', icon: 'settings' },
+    { title: 'Possuí um estabelecimento?', url: '/config', icon: 'briefcase' },
+  ];
   constructor() {}
 }
