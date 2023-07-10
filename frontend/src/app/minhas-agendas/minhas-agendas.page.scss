@@ -26,5 +26,10 @@ ion-menu-button {
 }
 
 ion-item, ion-list {
-  --padding-top: 10px;
+  margin-top: 10px;
+}
+
+.ripple-parent {
+  position: relative;
+  overflow: hidden;
 }

@@ -4,6 +4,7 @@ ion-menu-button {
 
 #container {
   text-align: center;
+  padding-top: 20px;
 }
 
 #container strong {
@@ -31,4 +32,11 @@ ion-menu-button {
 #container ion-title
 {
   font-size: 25px;
+}
+
+#container img
+{
+  width: 78vw;
+  margin-top: 25px;
+  border-radius: 8px;
 }
