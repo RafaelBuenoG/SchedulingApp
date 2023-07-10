@@ -14,7 +14,8 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-searchbar animated="true" showClearButton="always" placeholder="Pesquisar" (ionInput)="handleInput($event)"></ion-searchbar>
+  <ion-searchbar animated="true" showClearButton="always" placeholder="Pesquisar"
+  (ionInput)="handleInput($event)" mode="ios"></ion-searchbar>
 
   <ion-list>
     <ion-item *ngFor="let result of results">

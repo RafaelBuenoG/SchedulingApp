@@ -7,8 +7,6 @@ ion-menu-button {
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 #container strong {
@@ -25,4 +23,8 @@ ion-menu-button {
 
 #container a {
   text-decoration: none;
+}
+
+ion-item, ion-list {
+  --padding-top: 10px;
 }

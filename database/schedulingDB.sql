@@ -25,6 +25,15 @@ user varchar(255) not null,
 foreign key (user) references user(id)
 );
 
+create table area(
+id varchar(255) primary key,
+name varchar(30) not null,
+image varchar(200),
+establishment varchar(255) not null,
+
+foreign key (establishment) references establishment(id)
+);
+
 create table service(
 id varchar(255) primary key,
 name varchar(30) not null,
@@ -32,21 +41,10 @@ description varchar(200) not null,
 price double not null,
 image varchar(200),
 user varchar(255) not null,
-establishment varchar(255) not null,
+area varchar(255) not null,
 
 foreign key (user) references user(id),
-foreign key (establishment) references establishment(id)
-);
-
-create table ordered(
-id varchar(255) primary key,
-date date,
-time time,
-user varchar(255) not null,
-service varchar(255) not null,
-
-foreign key (user) references user(id),
-foreign key (service) references service(id)
+foreign key (area) references area(id)
 );
 
 create table schedule(
@@ -58,4 +56,13 @@ service varchar(255) not null,
 
 foreign key (user) references user(id),
 foreign key (service) references service(id)
+);
+
+create table ordered(
+id varchar(255) primary key,
+schedule varchar(255) not null,
+establishment varchar(255) not null,
+
+foreign key (schedule) references schedule(id),
+foreign key (establishment) references establishment(id)
 );
