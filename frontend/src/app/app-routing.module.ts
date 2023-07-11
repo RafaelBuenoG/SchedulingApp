@@ -16,13 +16,21 @@ const routes: Routes = [
     loadChildren: () => import('./minhas-agendas/minhas-agendas.module').then( m => m.MinhasAgendasPageModule)
   },
   {
-    path: 'agendar',
-    loadChildren: () => import('./agendar/agendar.module').then( m => m.AgendarPageModule)
+    path: 'agendamentos',
+    loadChildren: () => import('./agendamentos/agendar-list/agendar-list.module').then( m => m.AgendarListPageModule)
+  },
+  {
+    path: 'agendamentos/new/:id',
+    loadChildren: () => import('./agendamentos/agendar-form/agendar-form.module').then( m => m.AgendarFormPageModule)
   },
   {
     path: 'conta',
     loadChildren: () => import('./conta/conta.module').then( m => m.ContaPageModule)
-  }
+  },
+  {
+    path: 'folder/:id',
+    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
 ];
 
 @NgModule({

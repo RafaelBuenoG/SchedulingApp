@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-agendar',
-  templateUrl: './agendar.page.html',
-  styleUrls: ['./agendar.page.scss'],
+  selector: 'app-agendar-list',
+  templateUrl: './agendar-list.page.html',
+  styleUrls: ['./agendar-list.page.scss'],
 })
-export class AgendarPage implements OnInit {
+export class AgendarListPage implements OnInit {
   nomePagina = ''
 
   constructor() { }

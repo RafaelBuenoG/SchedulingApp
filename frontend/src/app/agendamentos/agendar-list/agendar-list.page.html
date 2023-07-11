@@ -26,8 +26,9 @@
       <ion-card-content>
         {{ e.address }} <br> {{ e.city }}
       </ion-card-content>
-
-      <ion-button fill="clear">
+      <!-- TODO: Fazer o routerlink levar para a página personalizada de cada estabelecimento para o agendamento.
+      Passando o id do estabelecimento para depois a página pegar esse id da url e fazer as "alterações" na página -->
+      <ion-button fill="clear" [routerLink]="['new/', e.service]">
         <ion-icon name="add"></ion-icon>
         Agendar</ion-button>
         <ion-button fill="clear">Detalhes</ion-button>
